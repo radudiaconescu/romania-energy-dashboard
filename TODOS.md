@@ -4,10 +4,11 @@
 
 ### P1 — Infrastructure
 
-#### [ ] Init git repo + push to GitHub
+#### [x] Init git repo + push to GitHub
 **What:** `git init && git add -A && git commit -m 'initial'` + GitHub remote. Connect to Netlify for auto-deploy on push.
 **Why:** Zero version control = zero rollback beyond Netlify's deploy list. One bad deploy with no git history is unrecoverable locally.
 **Effort:** XS (15 min) | **Depends on:** nothing
+**Completed:** v0.1.2.0 (2026-04-20)
 
 #### [ ] Custom domain
 **What:** Add a memorable domain (e.g. energy.ro, ro-energy.live) via Netlify dashboard + DNS config.
