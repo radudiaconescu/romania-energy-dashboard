@@ -6,7 +6,7 @@ import { EnergyMixChart } from '../components/EnergyMixChart'
 import { GenerationTimeline } from '../components/GenerationTimeline'
 import { GenerationBreakdown } from '../components/GenerationBreakdown'
 import { StorageCard } from '../components/StorageCard'
-import { NeighborsCard } from '../components/NeighborsCard'
+import { EnergyFlowMap } from '../components/EnergyFlowMap'
 import { formatMW } from '../utils/format'
 
 export function Dashboard() {
@@ -64,10 +64,10 @@ export function Dashboard() {
         <GenerationTimeline history={history} />
       </div>
 
-      {/* Breakdown + Neighbors */}
+      {/* Breakdown + Flow Map */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
         <GenerationBreakdown latest={latest} />
-        <NeighborsCard latest={latest} />
+        <EnergyFlowMap latest={latest} />
       </div>
 
       {/* Footer */}
